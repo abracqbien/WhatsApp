@@ -2,6 +2,7 @@ import React from "react"
 import { Meteor } from "meteor/meteor"
 
 // Components
+import SearchBar from "./SearchBar"
 import Header from "./Header"
 import Avatar from "./Avatar"
 import Status from "./Status"
@@ -19,6 +20,7 @@ const Left = (props:any):JSX.Element => {
         <Avatar avatar_url={Meteor.user().profile.picture} />
       </Header>
       <Status />
+      <SearchBar />
     </StyledLeft>
   )
 }
