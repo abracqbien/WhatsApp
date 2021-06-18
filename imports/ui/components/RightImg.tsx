@@ -20,6 +20,7 @@ const RightImg = (props:any):JSX.Element => {
         </p>
         <div className="rightImg--divider" />
       </div>
+      {props.children}
     </StyledRightImg>
   )
 }

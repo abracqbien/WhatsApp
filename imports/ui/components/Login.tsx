@@ -2,12 +2,16 @@ import React from 'react'
 
 // Components
 import FormLogin from './FormLogin'
+import RightImg from './RightImg'
+
+// Constantes
+const messageText:string = "Connectez vous afin de lancer une conversation"
 
 const Login = (props:any):JSX.Element => {
   return (
-    <div>
+    <RightImg messageText={messageText}>
       <FormLogin />
-    </div>
+    </RightImg>
   )
 }
 
