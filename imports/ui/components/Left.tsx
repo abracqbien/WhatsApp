@@ -4,6 +4,7 @@ import { Meteor } from "meteor/meteor"
 // Components
 import Header from "./Header"
 import Avatar from "./Avatar"
+import Status from "./Status"
 
 // Styles
 import StyledLeft from "../elements/StyledLeft"
@@ -17,6 +18,7 @@ const Left = (props:any):JSX.Element => {
       <Header icons={icons} iconClass="greyIcon">
         <Avatar avatar_url={Meteor.user().profile.picture} />
       </Header>
+      <Status />
     </StyledLeft>
   )
 }
