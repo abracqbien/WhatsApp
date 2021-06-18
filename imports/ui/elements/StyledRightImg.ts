@@ -7,8 +7,7 @@ const StyledRightImg = styled.div `
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: ${ ({
-    theme}) => theme.rightImg.color.bgGrey};
+    background: ${ ({theme}) => theme.rightImg.color.bgGrey};
 
     ${props => props.right && css `
         width: 100%;
