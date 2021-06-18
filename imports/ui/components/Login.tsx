@@ -8,9 +8,15 @@ import RightImg from './RightImg'
 const messageText:string = "Connectez vous afin de lancer une conversation"
 
 const Login = (props:any):JSX.Element => {
+
+  // Functions
+  const handleLogin = (state:any):void => {
+    
+  }
+
   return (
     <RightImg messageText={messageText}>
-      <FormLogin />
+      <FormLogin onLogin={handleLogin} />
     </RightImg>
   )
 }
